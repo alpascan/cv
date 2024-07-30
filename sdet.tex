@@ -1,0 +1,78 @@
+\documentclass[11pt]{article}       % set main text size
+\usepackage[a4paper,                % set paper size to A4. change to letterpaper for US/Canadian resumes
+top=0.5in,                          % specify top page margin
+bottom=0.5in,                       % specify bottom page margin
+left=0.5in,                         % specify left page margin
+right=0.5in]{geometry}              % specify right page margin
+                       
+\usepackage{XCharter}               % set font
+\usepackage[T1]{fontenc}            % output encoding
+\usepackage[utf8]{inputenc}         % input encoding
+\usepackage{enumitem}               % enable lists for bullet points: itemize and \item
+\usepackage[hidelinks]{hyperref}    % format hyperlinks
+\usepackage{titlesec}               % enable section title customization
+\raggedright                        % disable text justification
+\pagestyle{empty}                   % disable page numbering
+
+% ensure PDF output will be all-Unicode and machine-readable
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+% format section headings: bolding, size, white space above and below
+\titleformat{\section}{\bfseries\large}{}{0pt}{}[\vspace{1pt}\titlerule\vspace{-6.5pt}]
+
+% format bullet points: size, white space above and below, white space between bullets
+\renewcommand\labelitemi{$\vcenter{\hbox{\small$\bullet$}}$}
+\setlist[itemize]{itemsep=-2pt, leftmargin=12pt}
+
+% resume starts here
+\begin{center}
+    \textbf{\Huge Alexandru Pascan} \\
+    \href{mailto:alexandru@pascan.ro}{alexandru@pascan.ro} | \href{https://github.com/alpascan}{github.com/alpascan} | Swiss B permit holder
+\end{center}
+
+\section*{Skills}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Languages:} Python, Javascript, Typescript, Java, Kotlin, Swift, Gherkin, bash
+    \item \textbf{Frameworks:} Terraform, Playwright, CucumberJS, Selenium, Behave, RestAssured
+    \item \textbf{Technologies:} Kafka, Protobuf, Kubernetes, AWS, docker
+    \item \textbf{Tooling:} Helm, Jenkins, Artifactory, Sonar, Testrail, New Relic, Datadog
+\end{itemize}
+
+\section*{Experience}
+
+\subsection*{Software Engineer in Test, Nexthink – Lausanne, Switzerland \hfill September 2019 – Present}
+\begin{itemize}[leftmargin=*]
+    \item Developed and maintained a comprehensive automation framework in Python, using the cucumber framework Behave, that covered integration (REST API, Kafka, and Protobuf contract validation) and UI tests (Selenium).
+    \item Enhanced performance testing capabilities with Locust, optimizing the system's response time and reliability.
+    \item Improved the Infrastructure as Code (IaC) by establishing and updating Jenkins pipelines in Groovy, handling building, quality gating, code coverage, and deployment of Helm charts to Artifactory, as well as Docker images to AWS ECR.
+    \item Automating deployment workflows, ensuring seamless PR to master transitions with deployment, testing, and build failure reporting to Testrail, New Relic, and later Datadog.
+    \item Implementing automated browser extension tests in Python using Pytest and Selenium, focusing on Native messaging communications, improving test coverage and reliability.
+    \item Modernized the E2E framework for our team in CucumberJS TypeScript, using Playwright, that allowed frontend devs to contribute more comfortably to the testing initiative.
+\end{itemize}
+
+\subsection*{Quality Assurance Engineer, R3PI – Zurich, Switzerland \hfill Jan 2021 – May 2022}
+\begin{itemize}[leftmargin=*]
+    \item Created and maintained the Android Espresso Test Automation Framework for the whole company, reducing regression testing time and improving test consistency by automating key functional tests across all teams.
+    \item Developed and maintained SWIFT XCode automation tests for the Claims Project, enhancing test coverage and reliability, leading to fewer production issues in the iOS application.
+    \item Expanded the Java Cucumber API Automation Suite by adding new test cases and functionalities, improving the reliability and coverage of Rest-Assured API tests, and reducing production bugs.
+    \item Provided manual testing support for the Agile-focused Claims teams across iOS, Android, API, and backend systems, ensuring thorough defect identification and resolution.
+    \item Conducted manual API testing for system configurations, ensuring accurate data flows and integration on web/API platforms, which minimized configuration-related issues.
+\end{itemize}
+
+\subsection*{QA Engineer, Company – City, ST \hfill Aug 2014 – Sept 2020}
+\begin{itemize}[leftmargin=*]
+    \item Developed and executed detailed test cases for a J2SE web frontend on JBOSS, ensuring robust testing of modules like POS, CSR, resource management, and self-care, which improved application stability and user experience.
+    \item Conducted thorough testing on J2SE applications for telecom services, including RTC and finance modules, to ensure functionality and performance, leading to reliable service delivery.
+    \item Regularly updated and maintained virtual machines used for testing, ensuring that environments were up-to-date and reflective of production settings, which enhanced the accuracy and reliability of test results.
+    \item Contributed to the Agile rework of the POS system, collaborating with cross-functional teams to refine and enhance system features, which resulted in a more efficient and user-friendly POS solution.
+    \item Developed comprehensive SOAP API test suites, automating the validation of API endpoints and data integrity, which ensured the reliability and security of web services.
+    \item Created and maintained personal regression test suites with Selenium, automating the testing process and ensuring that new releases did not introduce regressions, thus maintaining the quality of the application.
+\end{itemize}
+
+\section*{Education}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Universitatea Stefan Cel Mare} – BS in Mechanical Engineering \hfill Apr 2004
+\end{itemize}
+
+\end{document}
