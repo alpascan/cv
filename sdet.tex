@@ -1,5 +1,5 @@
 \documentclass[11pt]{article}       % set main text size
-\usepackage[a4paper,                % set paper size to A4. change to letterpaper for US/Canadian resumes
+\usepackage[a4paper,                % set paper size to A4
 top=0.5in,                          % specify top page margin
 bottom=0.5in,                       % specify bottom page margin
 left=0.5in,                         % specify left page margin
@@ -26,10 +26,19 @@ right=0.5in]{geometry}              % specify right page margin
 \setlist[itemize]{itemsep=-2pt, leftmargin=12pt}
 
 % resume starts here
-\begin{center}
-    \textbf{\Huge Alexandru Pascan} \\
-    \href{mailto:alexandru@pascan.ro}{alexandru@pascan.ro} | \href{https://github.com/alpascan}{github.com/alpascan} | Swiss B permit holder
-\end{center}
+\begin{document}
+
+%name
+\centerline{\Huge Alexandru Pascan} 
+
+\vspace{5pt}
+
+%contact 
+\centerline{\href{mailto:alexandru@pascan.ro}{alexandru@pascan.ro} | \href{https://github.com/alpascan}{github.com/alpascan} | Swiss B permit holder}
+
+
+\vspace{-10pt}
+
 
 \section*{Skills}
 \begin{itemize}[leftmargin=*]
@@ -39,29 +48,38 @@ right=0.5in]{geometry}              % specify right page margin
     \item \textbf{Tooling:} Helm, Jenkins, Artifactory, Sonar, Testrail, New Relic, Datadog
 \end{itemize}
 
+\vspace{-18.5pt}
+
+
 \section*{Experience}
 
-\subsection*{Software Engineer in Test, Nexthink – Lausanne, Switzerland \hfill September 2019 – Present}
-\begin{itemize}[leftmargin=*]
+\textbf{Software Engineer in Test,} \href{https://nexthink.com/}{Nexthink} -- Lausanne, Switzerland \hfill Sept 2019 – Present
+\vspace{-9pt}
+
+\begin{itemize}
     \item Developed and maintained a comprehensive automation framework in Python, using the cucumber framework Behave, that covered integration (REST API, Kafka, and Protobuf contract validation) and UI tests (Selenium).
     \item Enhanced performance testing capabilities with Locust, optimizing the system's response time and reliability.
     \item Improved the Infrastructure as Code (IaC) by establishing and updating Jenkins pipelines in Groovy, handling building, quality gating, code coverage, and deployment of Helm charts to Artifactory, as well as Docker images to AWS ECR.
-    \item Automating deployment workflows, ensuring seamless PR to master transitions with deployment, testing, and build failure reporting to Testrail, New Relic, and later Datadog.
+    \item Automating deployment workflows, ensuring seamless PR to master transitions with deployment, testing, and build failure reporting to TestRail, New Relic, and later Datadog.
     \item Implementing automated browser extension tests in Python using Pytest and Selenium, focusing on Native messaging communications, improving test coverage and reliability.
     \item Modernized the E2E framework for our team in CucumberJS TypeScript, using Playwright, that allowed frontend devs to contribute more comfortably to the testing initiative.
 \end{itemize}
 
-\subsection*{Quality Assurance Engineer, R3PI – Zurich, Switzerland \hfill Jan 2021 – May 2022}
-\begin{itemize}[leftmargin=*]
+\textbf{Quality Assurance Engineer,} \href{https://www.solera.com/}{R3PI} –- Zurich, Switzerland \hfill Jul 2017 – Aug 2019
+\vspace{-9pt}
+
+\begin{itemize}
     \item Created and maintained the Android Espresso Test Automation Framework for the whole company, reducing regression testing time and improving test consistency by automating key functional tests across all teams.
-    \item Developed and maintained SWIFT XCode automation tests for the Claims Project, enhancing test coverage and reliability, leading to fewer production issues in the iOS application.
+    \item Developed and maintained Swift XCode automation tests for the Claims Project, enhancing test coverage and reliability, leading to fewer production issues in the iOS application.
     \item Expanded the Java Cucumber API Automation Suite by adding new test cases and functionalities, improving the reliability and coverage of Rest-Assured API tests, and reducing production bugs.
     \item Provided manual testing support for the Agile-focused Claims teams across iOS, Android, API, and backend systems, ensuring thorough defect identification and resolution.
     \item Conducted manual API testing for system configurations, ensuring accurate data flows and integration on web/API platforms, which minimized configuration-related issues.
 \end{itemize}
 
-\subsection*{QA Engineer, Company – City, ST \hfill Aug 2014 – Sept 2020}
-\begin{itemize}[leftmargin=*]
+\textbf{QA Engineer,} \href{https://mindcti.com/}{MIND CTI} –- Suceava, Romania \hfill Jul 2015 – Jul 2017
+\vspace{-9pt}
+
+\begin{itemize}
     \item Developed and executed detailed test cases for a J2SE web frontend on JBOSS, ensuring robust testing of modules like POS, CSR, resource management, and self-care, which improved application stability and user experience.
     \item Conducted thorough testing on J2SE applications for telecom services, including RTC and finance modules, to ensure functionality and performance, leading to reliable service delivery.
     \item Regularly updated and maintained virtual machines used for testing, ensuring that environments were up-to-date and reflective of production settings, which enhanced the accuracy and reliability of test results.
@@ -69,10 +87,11 @@ right=0.5in]{geometry}              % specify right page margin
     \item Developed comprehensive SOAP API test suites, automating the validation of API endpoints and data integrity, which ensured the reliability and security of web services.
     \item Created and maintained personal regression test suites with Selenium, automating the testing process and ensuring that new releases did not introduce regressions, thus maintaining the quality of the application.
 \end{itemize}
+\vspace{-18.5pt}
 
 \section*{Education}
-\begin{itemize}[leftmargin=*]
-    \item \textbf{Universitatea Stefan Cel Mare} – BS in Mechanical Engineering \hfill Apr 2004
+\begin{itemize}
+    \item \textbf{"Stefan cel Mare" University} –- BS in Mechanical Engineering \hfill Apr 2016
 \end{itemize}
 
 \end{document}
