@@ -36,57 +36,51 @@ right=0.5in]{geometry}              % specify right page margin
 %contact 
 \centerline{\href{mailto:alexandru@pascan.ro}{alexandru@pascan.ro} | \href{https://github.com/alpascan}{github.com/alpascan} | Swiss B permit holder}
 
-
 \vspace{-10pt}
-
 
 \section*{Skills}
 \begin{itemize}[leftmargin=*]
-    \item \textbf{Languages:} Python, Javascript, Typescript, Java, Kotlin, Swift, Gherkin, bash
-    \item \textbf{Frameworks:} Terraform, Playwright, CucumberJS, Selenium, Behave, RestAssured
-    \item \textbf{Technologies:} Kafka, Protobuf, Kubernetes, AWS, docker
-    \item \textbf{Tooling:} Helm, Jenkins, Artifactory, Sonar, Testrail, New Relic, Datadog
+    \item \textbf{Languages:} Go, Python, TypeScript, JavaScript, Java, Kotlin, Groovy, bash
+    \item \textbf{Frameworks:} Playwright, Terraform, Locust, CucumberJS, Selenium, Behave
+    \item \textbf{Technologies:} Kubernetes, AWS (Lambda, ECR), Kafka, Protobuf, Flux, GitHub Actions, docker
+    \item \textbf{Tooling:} Helm, GitOps, Jenkins, Xray, Pact, TestRail, Datadog, New Relic
 \end{itemize}
 
 \vspace{-18.5pt}
 
-
 \section*{Experience}
 
-\textbf{Software Engineer in Test,} \href{https://nexthink.com/}{Nexthink} -- Lausanne, Switzerland \hfill Sept 2019 – Present
+\textbf{Software Engineer in Test / Tech Lead,} \href{https://nexthink.com/}{Nexthink} -- Lausanne, Switzerland \hfill Sept 2019 – Present
 \vspace{-9pt}
 
 \begin{itemize}
-    \item Developed and maintained a comprehensive automation framework in Python, using the cucumber framework Behave, that covered integration (REST API, Kafka, and Protobuf contract validation) and UI tests (Selenium).
-    \item Enhanced performance testing capabilities with Locust, optimizing the system's response time and reliability.
-    \item Improved the Infrastructure as Code (IaC) by establishing and updating Jenkins pipelines in Groovy, handling building, quality gating, code coverage, and deployment of Helm charts to Artifactory, as well as Docker images to AWS ECR.
-    \item Automating deployment workflows, ensuring seamless PR to master transitions with deployment, testing, and build failure reporting to TestRail, New Relic, and later Datadog.
-    \item Implementing automated browser extension tests in Python using Pytest and Selenium, focusing on Native messaging communications, improving test coverage and reliability.
-    \item Modernized the E2E framework for our team in CucumberJS TypeScript, using Playwright, that allowed frontend devs to contribute more comfortably to the testing initiative.
+    \item Leading the Enablement team's technical initiatives, architecting and delivering infrastructure improvements across QA organization including GitOps adoption, CI/CD pipelines, and test automation platforms.
+    \item Architected and developed microservices in Go including xray-jira-service for automated test reporting from Kubernetes helm test jobs, and AWS Lambda functions for GitHub checks validating Pact contracts, helm tests, and Xray reporting.
+    \item Established GitOps repository for QA group using Helm charts with Flux, standardizing deployment practices and enabling infrastructure-as-code across teams.
+    \item Implemented comprehensive GitHub Actions workflows organization-wide, replacing Jenkins pipelines and integrating Jira pass-through automation for improved developer experience.
+    \item Led performance testing infrastructure overhaul with distributed Locust tests via Kubernetes operator, optimizing system reliability and response times.
+    \item Modernized E2E framework in CucumberJS TypeScript with Playwright, enabling frontend developers to contribute to testing initiatives and improving test maintainability.
+    \item Developed Python automation framework using Behave covering integration (REST API, Kafka, Protobuf validation) and UI tests, with automated deployment workflows and reporting to TestRail and Datadog.
 \end{itemize}
 
 \textbf{Quality Assurance Engineer,} \href{https://www.solera.com/}{R3PI} -- Zurich, Switzerland \hfill Jul 2017 – Aug 2019
 \vspace{-9pt}
 
 \begin{itemize}
-    \item Created and maintained the Android Espresso Test Automation Framework for the whole company, reducing regression testing time and improving test consistency by automating key functional tests across all teams.
-    \item Developed and maintained Swift XCode automation tests for the Claims Project, enhancing test coverage and reliability, leading to fewer production issues in the iOS application.
-    \item Expanded the Java Cucumber API Automation Suite by adding new test cases and functionalities, improving the reliability and coverage of Rest-Assured API tests, and reducing production bugs.
-    \item Provided manual testing support for the Agile-focused Claims teams across iOS, Android, API, and backend systems, ensuring thorough defect identification and resolution.
-    \item Conducted manual API testing for system configurations, ensuring accurate data flows and integration on web/API platforms, which minimized configuration-related issues.
+    \item Created company-wide Android Espresso and iOS XCTest automation frameworks, reducing regression testing time and improving test consistency across all mobile applications.
+    \item Expanded Java Cucumber API automation suite with Rest-Assured, improving API test coverage and reliability across Claims and backend systems.
+    \item Provided comprehensive testing support for Agile teams across iOS, Android, API, and backend platforms, ensuring thorough defect identification and resolution.
 \end{itemize}
 
 \textbf{QA Engineer,} \href{https://mindcti.com/}{MIND CTI} -- Suceava, Romania \hfill Jul 2015 – Jul 2017
 \vspace{-9pt}
 
 \begin{itemize}
-    \item Developed and executed detailed test cases for a J2SE web frontend on JBOSS, ensuring robust testing of modules like POS, CSR, resource management, and self-care, which improved application stability and user experience.
-    \item Conducted thorough testing on J2SE applications for telecom services, including RTC and finance modules, to ensure functionality and performance, leading to reliable service delivery.
-    \item Regularly updated and maintained virtual machines used for testing, ensuring that environments were up-to-date and reflective of production settings, which enhanced the accuracy and reliability of test results.
-    \item Contributed to the Agile rework of the POS system, collaborating with cross-functional teams to refine and enhance system features, which resulted in a more efficient and user-friendly POS solution.
-    \item Developed comprehensive SOAP API test suites, automating the validation of API endpoints and data integrity, which ensured the reliability and security of web services.
-    \item Created and maintained personal regression test suites with Selenium, automating the testing process and ensuring that new releases did not introduce regressions, thus maintaining the quality of the application.
+    \item Developed test automation for J2SE telecom applications including POS, CSR, and resource management modules, improving application stability and user experience.
+    \item Created SOAP API test suites and Selenium regression frameworks, automating validation processes and maintaining release quality.
+    \item Contributed to Agile rework of POS system, collaborating with cross-functional teams to enhance features and system efficiency.
 \end{itemize}
+
 \vspace{-18.5pt}
 
 \section*{Education}
